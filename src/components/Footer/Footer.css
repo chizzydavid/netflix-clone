@@ -1,0 +1,46 @@
+
+footer {
+    padding: 4rem 15%;
+    background-color: #1a1a1a;
+    font-size: 14px;
+    text-align: center;
+ }
+
+ .footer__row {
+     display: flex;
+ }
+ .footer_right {
+     flex: 1;
+ }
+  .social__link {
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+}
+.social__link .link {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 37px;
+    color: gray;
+}
+
+
+.copyright {
+    color: gray;
+    font-size: 14px;
+}
+ @media screen and (max-width: 790px) {
+    footer {
+        padding: 4rem 5%;
+    }
+}
+
+
+ @media screen and (max-width: 600px) {
+    .footer__row {
+        flex-direction: column;
+    }
+}
+

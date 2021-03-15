@@ -1,0 +1,98 @@
+.VideoBackground {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.VideoModalWrapper {
+  width: 600px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  background-color: black;
+  color: white;
+  position: relative;
+  z-index: 30;
+  border-radius: 10px;
+  
+}
+
+.VideoModalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  background-color: #141414;
+  color: white;
+  padding: 30px;
+  font-size: 13px;
+  text-align: left;
+}
+
+.VideoModalContent h2 {
+  text-align: left;
+  width: 100%;
+}
+.imageModal {
+  width: 100%;
+  max-height: 450px;
+}
+.overview {
+  font-size: 13px;
+}
+.content_key {
+  color: #8c8c8c;
+}
+.white_text {
+  color: white;
+}
+.ratings {
+  margin-left: 10px;
+  font-size: 18px;
+}
+.video__details {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.movie__genre {
+  display: inline;
+  font-size: 12px;
+}
+.genre {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.CloseVideoModalButton {
+  cursor: pointer;
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  z-index: 10;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .VideoModalWrapper {
+    width: 92%;
+    margin: auto;
+  }
+  .VideoModalContent {
+    font-size: 12px !important;
+    padding: 10px 15px;
+  }
+}
+
+
+

@@ -1,0 +1,81 @@
+.row {
+    color: white;
+    margin: 30px 10px 0 20px;
+
+}
+.poster__container {
+    cursor: pointer;
+}
+.row__posters {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    display: flex;
+}
+.row__posters::-webkit-scrollbar {
+    display: none;
+}
+
+.poster__wrapper {
+    margin-right: 10px;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+.card__footer {
+    transition: all 450ms;
+    position: absolute;
+    padding: 10px 10px 15px 10px;
+    width: 100%;
+    color: #b3b3b3 !important;
+    transform: translateY(-40px);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.6) 0,
+        rgba(0, 0, 0, 0.6) 60%,
+        rgba(0, 0, 0, 0.6) 100%
+    );    
+}
+.card__footer .ratings {
+    font-size: 12px;
+}
+.more {
+    color: red;
+    margin-left: 25%;
+    font-size: 13px;
+}
+.poster__wrapper:hover .row__poster{
+    transform: scale(1.08);
+    opacity: 1;
+}
+.poster__wrapper:hover .card__footer {
+    transform: translateY(-70px);
+    width: 110%;
+    /* left: -10px; */
+}
+
+.row__poster {
+    max-height: 150px;
+    transition: transform 450ms;
+    cursor: pointer;
+}
+.movie__name {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.row__posterLarge {
+    max-height: 320px;
+    margin-right: 10px;
+}
+.row__posterLarge:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+

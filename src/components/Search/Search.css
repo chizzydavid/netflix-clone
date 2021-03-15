@@ -1,0 +1,114 @@
+
+.section {
+    padding: 150px 60px 20px 60px;
+    color: white;
+    height: 100%;
+    min-height: 100vh;
+}
+.search_preview{
+    padding-bottom: 15px;
+    width: 100%;
+    border-bottom: solid #f9f9f9 1.4px;
+}
+.row {
+    color: white;
+    margin: 30px 10px 0 20px;
+}
+.poster__container {
+    cursor: pointer;
+}
+.poster__container.search {
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+.row__posters.search {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.search__poster__wrapperLarge {
+    position: relative;
+}
+.row__posters::-webkit-scrollbar {
+    display: none;
+}
+.loader-wrapper {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+.no_results {
+    font-size: 22px;
+}
+.card__overlay {
+    transition: all 450ms;
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 10px 10px 15px 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #b3b3b3 !important;
+    visibility: hidden;
+    opacity: 0;
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.7) 0,
+        rgba(0, 0, 0, 0.7) 60%,
+        rgba(0, 0, 0, 0.7) 100%
+    );    
+}
+.card__overlay .ratings {
+    font-size: 12px;
+}
+.search__more {
+    color: red;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.search__poster__wrapperLarge:hover .card__overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.search__movie__name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #f9f9f9;
+}
+
+.search__movie__desc {
+    font-size: 12px;
+    font-weight: 600;
+    color: #f9f9f9;
+    text-align: center;
+}
+
+.search__row__posterLarge {
+    max-height: 320px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .poster__container.search {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .search__row__posterLarge {
+        max-height: 190px;
+        margin-right: 15px;
+    }    
+.section {
+    padding: 90px 10px 20px 10px;
+    }
+}
+
